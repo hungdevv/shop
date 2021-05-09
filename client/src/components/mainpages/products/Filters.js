@@ -18,9 +18,9 @@ function Filters() {
     return (
         <div className="filter_menu">
             <div className="row">
-                <span>Filters: </span>
+                <span>Danh mục: </span>
                 <select name="category" value={category} onChange={handleCategory} >
-                    <option value=''>All Products</option>
+                    <option value=''>Tất cả sản phẩm </option>
                     {
                         categories.map(category => (
                             <option value={"category=" + category._id} key={category._id}>
@@ -31,17 +31,17 @@ function Filters() {
                 </select>
             </div>
 
-            <input type="text" value={search} placeholder="Enter your search!"
+            <input type="text" value={search} placeholder="Bạn cần tìm gì?"
             onChange={e => setSearch(e.target.value.toLowerCase())} />
 
             <div className="row sort">
-                <span>Sort By: </span>
+                <span>Sắp xếp theo:  </span>
                 <select value={sort} onChange={e => setSort(e.target.value)} >
-                    <option value=''>Newest</option>
-                    <option value='sort=oldest'>Oldest</option>
-                    <option value='sort=-sold'>Best sales</option>
-                    <option value='sort=-price'>Price: Hight-Low</option>
-                    <option value='sort=price'>Price: Low-Hight</option>
+                    <option value=''>Mới nhất</option>
+                    <option value='sort=oldest'>Cũ nhất</option>
+                    <option value='sort=-sold'>Sản phẩm tốt nhất</option>
+                    <option value='sort=-price'>Giá: Cao -> Thấp</option>
+                    <option value='sort=price'>Giá: Thất -> Cao</option>
                 </select>
             </div>
         </div>
