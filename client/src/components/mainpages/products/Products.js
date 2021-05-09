@@ -5,6 +5,7 @@ import Loading from '../utils/loading/Loading'
 import axios from 'axios'
 import Filters from './Filters'
 import LoadMore from './LoadMore'
+import Sliders from '../../sliders/Sliders'
 
 
 function Products() {
@@ -60,6 +61,7 @@ function Products() {
     return (
         <>
         <Filters />
+        <Sliders />
         
         {
             isAdmin && 

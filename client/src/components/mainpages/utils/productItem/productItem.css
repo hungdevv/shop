@@ -6,6 +6,7 @@
     box-shadow: 0 0 15px #ddd;
     margin: 10px 0;
     position: relative;
+    border-radius: 5px
 }
 .product_card img{
     width: 100%;
@@ -50,12 +51,22 @@
     padding: 6px;
 }
 #btn_buy{
-    background: #555;
+    background: rgb(255, 57, 69);
     margin-right: 5px;
+    border-radius: 50px;
 }
 #btn_view{
     background: teal;
     margin-left: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#btn_view:hover, #btn_buy:hover {
+    transform: translateY(-2px);
+}
+#btn_view:active, #btn_buy:active {
+    transform: translateY(-2px);
 }
 .product_card input{
     position: absolute;
