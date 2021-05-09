@@ -10,7 +10,6 @@ import Cart from './cart/Cart'
 import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
-import Sliders from '../sliders/Sliders'
 
 import {GlobalState} from '../../GlobalState'
 
@@ -35,8 +34,6 @@ function Pages() {
 
             <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
-
-            <Route path="/slide" exact component={Sliders} />
             <Route path="/cart" exact component={Cart} />
 
 
