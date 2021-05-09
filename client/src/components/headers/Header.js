@@ -24,8 +24,8 @@ function Header() {
     const adminRouter = () =>{
         return(
             <>
-                <li><Link to="/create_product">Create Product</Link></li>
-                <li><Link to="/category">Categories</Link></li>
+                <li><Link to="/create_product">Thêm sản phẩm </Link></li>
+                <li><Link to="/category">Danh mục</Link></li>
             </>
         )
     }
@@ -33,8 +33,8 @@ function Header() {
     const loggedRouter = () =>{
         return(
             <>
-                <li><Link to="/history">History</Link></li>
-                <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
+                <li><Link to="/history">Lịch sử </Link></li>
+                <li><Link to="/" onClick={logoutUser}>Đăng xuất</Link></li>
             </>
         )
     }

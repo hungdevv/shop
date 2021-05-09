@@ -17,8 +17,14 @@ code {
   max-width: 1230px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 20px;
+
   box-shadow: 0 0 35px #eee;
+}
+.Main {
+  padding: 0 20px;
+}
+.logo{
+  padding-left: 20px;
 }
 a{
   text-decoration: none;
@@ -87,6 +93,7 @@ button{
   header .menu{
     display: block;
     cursor: pointer;
+    margin-left: 10px;
   }
   header ul li .menu{
     position: absolute;
@@ -105,7 +112,10 @@ button{
 }
 
 @media (max-width: 500px){
-  .App{
+  /* .App{
+    padding: 0 10px;
+  } */
+  .Main{
     padding: 0 10px;
   }
   .detail{

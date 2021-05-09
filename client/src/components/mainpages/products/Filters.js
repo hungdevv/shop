@@ -38,10 +38,10 @@ function Filters() {
                 <span>Sắp xếp theo:  </span>
                 <select value={sort} onChange={e => setSort(e.target.value)} >
                     <option value=''>Mới nhất</option>
-                    <option value='sort=oldest'>Cũ nhất</option>
-                    <option value='sort=-sold'>Sản phẩm tốt nhất</option>
-                    <option value='sort=-price'>Giá: Cao -> Thấp</option>
-                    <option value='sort=price'>Giá: Thất -> Cao</option>
+                    <option value='sort=oldest'>{'Cũ nhất'}</option>
+                    <option value='sort=-sold'>{'Sản phẩm tốt nhất'}</option>
+                    <option value='sort=-price'>{'Giá: Cao -> Thấp'}</option>
+                    <option value='sort=price'>{'Giá: Thấp -> Cao'}</option>
                 </select>
             </div>
         </div>
