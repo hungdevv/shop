@@ -47,7 +47,7 @@ function UserAPI(token) {
             })
 
         }else{
-            alert("This product has been added to cart.")
+            alert("Sản phẩm đã có trong giỏ hàng!")
         }
     }
 

@@ -31,15 +31,15 @@ function OrderHistory() {
 
     return (
         <div className="history-page">
-            <h2>History</h2>
+            <h2>Lịch sử</h2>
 
-            <h4>You have {history.length} ordered</h4>
+            <h4>Bạn đã mua {history.length} sản phẩm </h4>
 
             <table>
                 <thead>
                     <tr>
-                        <th>Payment ID</th>
-                        <th>Date of Purchased</th>
+                        <th>ID Thanh toán</th>
+                        <th>Ngày mua</th>
                         <th></th>
                     </tr>
                 </thead>

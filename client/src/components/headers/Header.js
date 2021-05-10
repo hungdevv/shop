@@ -57,7 +57,7 @@ function Header() {
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
+                <li><Link to="/">{isAdmin ? 'Sản phẩm ' : 'Shop'}</Link></li>
 
                 {isAdmin && adminRouter()}
 
